@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "astro": "^5.13.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3"
   }
 }
