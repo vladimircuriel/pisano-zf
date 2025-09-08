@@ -1,16 +1,16 @@
 ---
-import Footer from "@components/navigation/footer/Footer";
-import Navbar from "@components/navigation/navbar/Navbar";
+import Footer from '@components/navigation/footer/Footer'
+import Navbar from '@components/navigation/navbar/Navbar'
 
 export interface LayoutProps {
-  title: string;
-  description?: string;
+  title: string
+  description?: string
 }
 
 const {
   title,
-  description = "El Parque Industrial Santiago Norte (PISANO) fundado en el año 1989, es un proyecto privado, compuesto por una Zona Franca de Exportación y una Zona Industrial Nacional. Provee mecanismos de exportación para la manufactura y ensamblaje de productos y servicios.",
-} = Astro.props as LayoutProps;
+  description = 'El Parque Industrial Santiago Norte (PISANO) fundado en el año 1989, es un proyecto privado, compuesto por una Zona Franca de Exportación y una Zona Industrial Nacional. Provee mecanismos de exportación para la manufactura y ensamblaje de productos y servicios.',
+} = Astro.props as LayoutProps
 ---
 
 <html lang="en">
