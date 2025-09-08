@@ -13,10 +13,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/hero.webp')",
         aboutHero: "url('/about-hero.webp')",
-        main: "url('/Background.webp')",
-        about: "url('/aboutpage-bg.webp')",
-        services: "url('/servicespage-bg.webp')",
-        contact: "url('/contactpage-bg.webp')",
+        main: "url('/background.webp')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],

@@ -1,0 +1,46 @@
+---
+import Layout from "@layouts/Layout.astro";
+import data from "@lib/data/data.json";
+---
+
+<Layout title="Noticias | Pisano Zona Franca">
+  <section
+    class="flex items-end justify-center w-full h-full px-4 lg:px-28 pt-[50px]"
+  >
+    <div
+      class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-primary-100/80 rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+    >
+      <h1
+        class="text-[45px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200"
+      >
+        Blog
+      </h1>
+      <p
+        class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-white"
+      >
+        Aquí encontrarás las noticias más recientes en las que nos hemos visto
+        involucrados a lo largo de nuestra trayectoria. Aportando al desarrollo
+        de nuestro país.
+      </p>
+    </div>
+  </section>
+  <section
+    class="grid grid-cols-3 gap-10 w-full h-full px-4 lg:px-28 pt-[80px]"
+  >
+    {
+      data.news.map((news) => {
+        return (
+          <a class="col-span-3 lg:col-span-1" href={news.link}>
+            <div class="flex flex-col gap-4 transition duration-300 hover:scale-105">
+              <img
+                class="w-full h-[250px] 2xl:h-[350px] object-cover rounded-xl"
+                src={news.img}
+                alt={news.title}
+              />
+            </div>
+          </a>
+        );
+      })
+    }
+  </section>
+</Layout>
