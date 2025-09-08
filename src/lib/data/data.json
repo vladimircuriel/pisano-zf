@@ -1,0 +1,113 @@
+{
+  "clients": [
+    {
+      "name": "A-D",
+      "img": "/clients/a-d.webp"
+    },
+    {
+      "name": "Casa Grande",
+      "img": "/clients/casa-grande.webp"
+    },
+    {
+      "name": "Allen Edmonds",
+      "img": "/clients/allen-edmonds.webp"
+    },
+    {
+      "name": "Avery Denninson",
+      "img": "/clients/avery-denninson.webp"
+    },
+    {
+      "name": "Avoil World",
+      "img": "/clients/avoil-world.webp"
+    },
+    {
+      "name": "Simpel",
+      "img": "/clients/simpel.webp"
+    },
+    {
+      "name": "Du Pont",
+      "img": "/clients/du-pont.webp"
+    },
+    {
+      "name": "Dunn Foster",
+      "img": "/clients/dunn-foster.webp"
+    },
+    {
+      "name": "Fortiflex",
+      "img": "/clients/fortiflex.webp"
+    },
+    {
+      "name": "Coats",
+      "img": "/clients/coats.webp"
+    },
+    {
+      "name": "Grulocar",
+      "img": "/clients/grulocar.webp"
+    },
+    {
+      "name": "K-Rain",
+      "img": "/clients/k-rain.webp"
+    },
+    {
+      "name": "Von Eicken",
+      "img": "/clients/von-eicken.webp"
+    },
+    {
+      "name": "Timberland",
+      "img": "/clients/timberland.webp"
+    },
+    {
+      "name": "DeRoyal",
+      "img": "/clients/de-royal.webp"
+    }
+  ],
+  "services": [
+    {
+      "name": "Control de Entrada",
+      "img": "/services/control-de-entrada.webp",
+      "info": "En el control de entrada nos aseguramos de que todo el acceso al parque sea controlado y autorizado."
+    },
+    {
+      "name": "Oficina de Visitantes",
+      "img": "/services/oficina-de-visitantes.webp",
+      "info": "En la oficina de visitantes, nos encargamos de validar la entrada de visitantes al parque, mediante la autorización de las empresas."
+    },
+    {
+      "name": "Oficina de Reclutamiento",
+      "img": "/services/oficina-de-reclutamiento.webp",
+      "info": "En la oficina de reclutamiento, recibimos los currículums de los interesados en trabajar en el parque, asignándolos a las empresas que lo requieran."
+    },
+    {
+      "name": "Centro de entrenamiento y capacitación",
+      "img": "/services/ceecapi.webp",
+      "info": "En el centro de entrenamiento y capacitación, nos encargamos de capacitar a los trabajadores de las empresas del parque y comunidades aledañas, en temas de seguridad, salud ocupacional, entre otros."
+    },
+    {
+      "name": "Estación de Bomberos",
+      "img": "/services/estacion-de-bomberos.webp",
+      "info": "Contamos con una estación de bomberos, equipada con todo lo necesario para atender cualquier emergencia."
+    },
+    {
+      "name": "Red Contra Incendios",
+      "img": "/services/red-contra-incendios.webp",
+      "info": "Nuestra red contra incendios, cuenta con hidrantes y mangueras, distribuidos estratégicamente en todo el parque."
+    }
+  ],
+  "news": [
+    {
+      "title": "Zonas Francas anuncian récord de exportaciones en octubre",
+      "link": "https://www.diariolibre.com/economia/zonas-francas-anuncian-record-de-exportaciones-en-octubre-DB22761332",
+      "img": "https://api.mightyshare.io/v1/19EIFDUEL496RA3F/1337/go-1.png?unique=1&height=700&width=1200&color=f39c12&style=light&template=go-1&url=https://www.diariolibre.com/economia/zonas-francas-anuncian-record-de-exportaciones-en-octubre-DB22761332"
+    },
+    {
+      "title": "Tres empresas producirán más de 5.5 millones de calzados en zonas francas de Santiago",
+      "link": "https://www.diariolibre.com/economia/tres-empresas-produciran-mas-de-5-5-millones-de-calzados-en-zonas-francas-de-santiago-EL12805274",
+      "img": "https://api.mightyshare.io/v1/19EIFDUEL496RA3F/1337/go-1.png?unique=1&height=700&width=1200&color=f39c12&style=light&template=go-1&url=https://elnuevodiario.com.do/anuncian-tres-empresas-produciran-mas-de-5-5-mm-de-calzados-en-2019-en-parque-pisano/"
+    },
+    {
+      "title": "Zonas Francas anuncian récord de exportaciones en octubre",
+      "link": "https://www.diariolibre.com/economia/zonas-francas-anuncian-record-de-exportaciones-en-octubre-DB22761332",
+      "img": "https://api.mightyshare.io/v1/19EIFDUEL496RA3F/1337/go-1.png?unique=1&height=700&width=1200&color=f39c12&style=light&template=go-1&url=https://eldinero.com.do/86712/inauguran-centro-de-capacitacion-en-zona-franca-pisano/"
+    }
+  ]
+}

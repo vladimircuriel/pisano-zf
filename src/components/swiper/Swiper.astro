@@ -1,0 +1,85 @@
+---
+import data from '@lib/data/data.json'
+---
+
+<script>
+  import Swiper from "swiper";
+  import { Navigation, Autoplay } from "swiper/modules";
+  import "swiper/css";
+  import "swiper/css/navigation";
+
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation, Autoplay],
+
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 5,
+    autoplay: {
+      delay: 4000,
+    },
+    centeredSlides: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<style>
+  .swiper {
+    overflow-y: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+  }
+
+  .swiper-slide-active > div {
+    transform: scale(1.1);
+    transition: transform 1.5s ease;
+    overflow-y: visible;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffc106;
+  }
+</style>
+
+<div class="w-full h-full swiper">
+  <div class="swiper-wrapper">
+    {
+      data.clients.map(
+        (logo: {
+          img: string | null | undefined;
+          name: string | null | undefined;
+        }) => {
+          return (
+            <div class="swiper-slide">
+              <div class="flex items-center justify-center">
+                <img
+                  class="h-auto rounded-full w-[250px] lg:w-[500px]"
+                  src={logo.img}
+                  alt={logo.name}
+                />
+              </div>
+            </div>
+          );
+        },
+      )
+    }
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>

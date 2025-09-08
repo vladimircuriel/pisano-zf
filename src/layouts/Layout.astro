@@ -1,4 +1,7 @@
 ---
+import Footer from "@components/navigation/footer/Footer";
+import Navbar from "@components/navigation/navbar/Navbar";
+
 export interface LayoutProps {
   title: string;
   description?: string;
@@ -26,7 +29,29 @@ const {
     />
     <title>{title}</title>
   </head>
-  <body>
-    <slot />
+  <body
+    class="flex flex-col min-h-screen antialiased bg-center bg-no-repeat bg-cover bg-main"
+  >
+    <header>
+      <Navbar client:only="react" />
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <Footer client:only="react" />
+    </footer>
+
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   </body>
 </html>

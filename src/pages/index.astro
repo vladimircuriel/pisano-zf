@@ -1,0 +1,113 @@
+---
+import { Image } from 'astro:assets'
+import CallIcon from '@components/icons/call'
+import Swiper from '@components/swiper/Swiper.astro'
+import Layout from '@layouts/Layout.astro'
+---
+
+<Layout title="Inicio | Pisano Zona Franca">
+	<section
+		class="w-full bg-hero bg-no-repeat bg-cover min-h-[650px] px-4 lg:px-28 pt-36 xl:px-0 flex items-start"
+	>
+		<div
+			class="lg:max-w-[1250px] w-full mx-auto flex flex-col bg-primary-100/80 rounded-2xl drop-shadow-2xl"
+		>
+			<h1
+				class="text-[40px] leading-[50px] md:text-[60px] text-center xl:text-[65px] px-2 font-dm md:leading-[106.25px] w-full xl:max-w-[100%] text-primary-200"
+			>
+				Una Zona Franca En El Corazón Del Caribe®
+			</h1>
+		</div>
+	</section>
+
+	<section
+		class="flex items-end justify-center w-full h-full px-4 lg:px-28 pt-[100px] lg:pt-[150px]"
+	>
+		<div
+			class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-primary-100/80 rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+		>
+			<h1
+				class="text-[40px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200"
+			>
+				Servicos
+			</h1>
+			<p
+				class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-white"
+			>
+				El Parque Industrial Santiago Norte (PISANO) fundado en el año 1989, es
+				un proyecto privado, compuesto por una Zona Franca de Exportación y una
+				Zona Industrial Nacional. Provee mecanismos de exportación para la
+				manufactura y ensamblaje de productos y servicios.
+			</p>
+		</div>
+	</section>
+
+	<section
+		class="w-full mx-auto px-4 lg:px-28 flex flex-col-reverse justify-center items-center lg:grid grid-cols-3 gap-[20px] lg:gap-[70px] pt-[100px] lg:pt-[150px]"
+	>
+		<div
+			class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6"
+		>
+			<h2
+				class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
+			>
+				Parque Industrial Santiago Norte
+			</h2>
+			<p
+				class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
+			>
+				Parque de Zona Franca ofreciendo naves industriales para exportación de
+				bienes y servicios en la República Dominicana.
+			</p>
+			<div class="flex items-center gap-4 pt-3">
+				<a href="tel:809 241 8111">
+					<CallIcon />
+				</a>
+				<p class="flex flex-col tracking-tight text-text-gray-200 font-jost">
+					<a href="tel:809 241 8111">
+						<span class="text-2xl font-bold leading-9">809-241-8111</span>
+					</a>
+					<span class="text-[22px] leading-8">Llama en cualquier momento</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="col-span-2">
+			<Image
+				class="transition-all duration-300 drop-shadow-2xl hover:scale-105"
+				src="/about.webp"
+				alt="Imagen de plantas industriales."
+				width={2656}
+				height={1621}
+			/>
+		</div>
+	</section>
+
+	<section
+		class="w-full h-full pt-[100px] lg:pt-[150px] flex justify-center px-4 lg:px-28 items-end"
+	>
+		<div
+			class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-primary-100/80 rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+		>
+			<h1
+				class="text-[45px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200"
+			>
+				Nuestros Clientes
+			</h1>
+			<p
+				class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-white"
+			>
+				Contamos con una amplia cartera de clientes que han confiado en nosotros
+				a lo largo de los años. Aquí te presentamos algunos de ellos que han
+				sido parte de nuestra historia. Desde grandes empresas hasta pequeñas y
+				medianas empresas.
+			</p>
+		</div>
+	</section>
+
+	<section
+		class="w-full h-full pt-[90px] flex justify-center px-4 lg:px-28 items-end"
+	>
+		<Swiper />
+	</section>
+</Layout>
